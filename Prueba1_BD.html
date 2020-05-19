@@ -1,38 +1,31 @@
-<html>
-    <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-</head>
-    <body>
+  </head>
+  <body>
         <!-- The core Firebase JS SDK is always required and must be listed first -->
-<script src="https://www.gstatic.com/firebasejs/7.14.4/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.2.0/firebase-app.js"></script>
 
-<script src="https://www.gstatic.com/firebasejs/6.2.0/firebase-database.js"></script>
-
-<!-- TODO: Add SDKs for Firebase products that you want to use
-     https://firebase.google.com/docs/web/setup#available-libraries -->
-<script src="https://www.gstatic.com/firebasejs/7.14.4/firebase-analytics.js"></script>
-
-<script>
-  // Your web app's Firebase configuration
-  var firebaseConfig = {
-    apiKey: "AIzaSyBf-XEwMKNN3VJ2TfUJqKcXz8F4DS2yBX0",
-    authDomain: "pruebaflutter-86516.firebaseapp.com",
-    databaseURL: "https://pruebaflutter-86516.firebaseio.com",
-    projectId: "pruebaflutter-86516",
-    storageBucket: "pruebaflutter-86516.appspot.com",
-    messagingSenderId: "327232134847",
-    appId: "1:327232134847:web:f31fa9a8ee59f570d3300a",
-    measurementId: "G-S6LS03Q41F"
-  };
-  // Initialize Firebase
-  firebase.initializeApp(firebaseConfig);
-  var baseDeDatos= firebase.database();
-  baseDeDatos.ref('clave-de-prueba').set({nombre:'Luis','edad':35});
-  firebase.analytics();
-</script>
-    </body>
+    <script src="https://www.gstatic.com/firebasejs/6.2.0/firebase-database.js"></script>
+    <script>
+      // Your web app's Firebase configuration
+      var firebaseConfig = {
+        apiKey: "AIzaSyBf-XEwMKNN3VJ2TfUJqKcXz8F4DS2yBX0",
+        authDomain: "pruebaflutter-86516.firebaseapp.com",
+        databaseURL: "https://pruebaflutter-86516.firebaseio.com",
+        projectId: "pruebaflutter-86516",
+        storageBucket: "pruebaflutter-86516.appspot.com",
+        messagingSenderId: "327232134847",
+        appId: "1:327232134847:web:f31fa9a8ee59f570d3300a",
+        measurementId: "G-S6LS03Q41F"
+      };
+      // Initialize Firebase
+      firebase.initializeApp(firebaseConfig);
+      var baseDeDatos= firebase.database();
+      baseDeDatos.ref('clave-de-prueba').set({nombre:'Luis','edad':35});
+    </script>
+  </body>
 </html>
